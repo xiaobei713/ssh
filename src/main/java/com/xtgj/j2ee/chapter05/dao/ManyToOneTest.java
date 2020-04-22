@@ -9,7 +9,7 @@ public class ManyToOneTest extends BaseHibernateDAO {
 	}
 
 	public void testManyToOne() {
-		TblJd JD = (TblJd) super.get(TblJd.class, 1);
+		TblJd JD = (TblJd) super.get(TblJd.class, 2);
 		String qxname = JD.getQx().getQx();
 		System.out.println(qxname + "," + JD.getJd());
 	}
